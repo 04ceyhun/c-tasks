@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double a, b;
+    char op;
+
+    cout << "Birinci ededi daxil edin: ";
+    cin >> a;
+
+    cout << "Ikinci ededi daxil edin: ";
+    cin >> b;
+
+    cout << "Emeliyyati secin (+, -, *, /): ";
+    cin >> op;
+
+    switch(op) {
+        case '+':
+            cout << "Netice: " << a + b << endl;
+            break;
+        case '-':
+            cout << "Netice: " << a - b << endl;
+            break;
+        case '*':
+            cout << "Netice: " << a * b << endl;
+            break;
+        case '/':
+            if(b != 0) {
+                cout << "Netice: " << a / b << endl;
+            } else {
+                cout << "Sifira bolme xetasi!" << endl;
+            }
+            break;
+        default:
+            cout << "Sehv emeliyyat!" << endl;
+    }
+
+    return 0;
+}
