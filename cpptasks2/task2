@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+
+    cout << "Bir eded daxil edin: ";
+    cin >> n;
+
+    if (n > 0) {
+        cout << "Bu eded musbetdir." << endl;
+    } else if (n < 0) {
+        cout << "Bu eded menfidir." << endl;
+    } else {
+        cout << "Bu eded sifirdir." << endl;
+    }
+
+    return 0;
+}
