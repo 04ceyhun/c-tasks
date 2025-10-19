@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+
+    cout << "Bir eded daxil edin: ";
+    cin >> n;
+
+    if (n % 2 == 0) {
+        cout << "Bu eded cutdur." << endl;
+    } else {
+        cout << "Bu eded tekdir." << endl;
+    }
+
+    return 0;
+}
